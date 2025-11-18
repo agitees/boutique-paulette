@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17",
+    "simple-parallax-js": "^6.0.1",
+    "tailwindcss": "^4.0.17"
+  },
+  "scripts": {
+    "prod": "tailwindcss -i ./src/input.css -o ./src/dist/output-min.css --minify",
+    "dev": "tailwindcss -i ./src/input.css -o ./src/output.css --watch"
+  }
+}

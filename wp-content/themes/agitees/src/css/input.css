@@ -1,0 +1,102 @@
+/* ==============================
+   Fonts
+   ============================== */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap"); Google Font */
+
+@import "tailwindcss";
+
+/* @theme {
+    --font-poppins: "poppins", sans-serif;
+} */
+
+
+/* ==============================
+   Normalisation
+   ============================== */
+body {
+    /* font-family: 'Poppins', sans-serif; */
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* ==============================
+   Barre de défilement
+   ============================== */
+/*    
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--color-lightblue);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+} */
+
+
+/* ==============================
+   FORMULAIRE
+   ============================== */
+/* Champs input
+.acf-form input[type="text"],
+.acf-form input[type="email"],
+.acf-form input[type="url"],
+.acf-form input[type="number"],
+.acf-form input[type="tel"],
+.acf-form input[type="search"],
+.acf-form input[type="password"],
+.acf-form textarea,
+.acf-form select {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-blue);
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0.375rem 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+}
+
+Description
+.acf-form .acf-field .acf-label p.description {
+    font-size: 0.80rem;
+} */
+
+
+/* ==============================
+   PAGE TYPE
+   ============================== */
+/*
+.agitees_page h2 {
+    color: var(--color-blue);
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.agitees_page a {
+    color: var(--color-blue);
+}
+
+@media screen and (max-width: 782px) { Mobile
+	.agitees_page p {
+        text-align: left;
+    }
+
+    .agitees_page ul li {
+        text-align: left;
+    }
+}
+
+.agitees_page ul li {
+    list-style-type: disc;
+    margin-left: 1.5%;
+} */

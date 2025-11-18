@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paulette - Concept store à Granville</title>
+    <link href="src/output.css" rel="stylesheet">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <!-- ************* HEADER ************* -->
+    <header class="relative">
+        <!-- Overlay -->
+        <div class="absolute top-0 w-full h-190 bg-black/35 z-20"></div>
+
+        <!-- Image de fond + titre centré -->
+        <div class="relative top-0 h-190 w-full">
+            <!-- Image -->
+            <img src="./assets/img/magasin-de-vetements-avec-mannequin.jpg" alt="" class="h-full w-full object-cover">
+
+            <!-- Titre centré -->
+            <div class="absolute inset-0 flex flex-col items-center justify-center z-40">
+                <h1 class="text-white text-4xl font-semibold text-center drop-shadow-lg w-120 max-xl:w-full leading-12">
+                    Nouveautés disponibles dans notre catalogue
+                </h1>
+                <a href="#" class="mt-5 text-white border-2 border-white px-8 py-2 font-bolder hover:bg-white hover:text-black max-xl:text-2xl">Découvrir</a>
+            </div>
+        </div>
+
+        <!-- NAVBAR -->
+        <nav class="absolute top-5 z-40 w-full">
+            <div class="flex items-center justify-between px-12">
+                <!-- Bloc gauche -->
+                <div class="flex items-center justify-start w-1/3 ml-100">
+                    <i class="fa-solid fa-magnifying-glass text-white text-2xl"></i>
+                </div>
+
+                <!-- Logo centré -->
+                <div class="flex justify-center w-1/3">
+                    <a href="./index.html">
+                        <img src="./assets/img/logo-paulette-blanc.png" alt="Logo Paulette" class="w-60 h-auto mx-auto">
+                    </a>
+                </div>
+
+                <!-- Bloc droit -->
+                <div class="flex items-center justify-end space-x-4 w-1/3 text-white mr-100">
+                    <a href="#">Connexion</a>
+                    <i class="fa-solid fa-heart text-white text-2xl"></i>
+                    <i class="fa-solid fa-cart-shopping text-white text-2xl"></i>
+                </div>
+            </div>
+            
+
+            <!-- ************** MENU DE NAVIGATION ************** -->
+            <div class="relative z-40 text-white uppercase flex space-x-8 justify-center mt-4">
+                <!-- Élément -->
+                <div class="relative group">
+                    <a href="#" 
+                    class="relative inline-block after:block after:h-0.5 after:bg-white after:absolute after:-bottom-0.5 after:left-0 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                        Tops
+                    </a>
+
+                    <!-- Mega menu -->
+                    <div class="absolute left-0 top-full mt-2 hidden group-hover:flex bg-white text-black shadow-lg p-6 w-[620px] justify-between">
+                        <!-- Colonne -->
+                        <div class="relative">
+                            <h3 class="font-bold uppercase mb-2">T-shirts</h3>
+                            <img src="./assets/img/magasin-de-vetements-avec-mannequin.jpg" alt="" class="w-full h-30 object-cover mb-4">
+                            <ul class="space-y-1 normal-case">
+                            <!-- Élément avec sous-menu -->
+                            <li class="relative group/item">
+                                <a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Manches courtes</a>
+
+                                <!-- Sous-menu -->
+                                <div class="absolute left-full -top-3 hidden group-hover/item:block bg-white text-black rounded-lg shadow-lg w-48 p-3">
+                                    <a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Basique</a>
+                                    <a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Imprimé</a>
+                                    <a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Col V</a>
+                                </div>
+                            </li>
+
+                                <!-- Autres éléments sans sous-menu -->
+                                <li><a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Manches longues</a></li>
+                                <li><a href="#" class="block py-1 px-2 hover:bg-gray-100 rounded">Oversize</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Colonne -->
+                        <div>
+                            <h3 class="font-bold uppercase mb-2">Chemises</h3>
+                            <img src="./assets/img/magasin-de-vetements-avec-mannequin.jpg" alt="" class="w-full h-30 object-cover mb-5">
+                            <ul class="space-y-1 normal-case">
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Classiques</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">À carreaux</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">En jean</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Colonne -->
+                        <div>
+                            <h3 class="font-bold uppercase mb-2">Débardeurs</h3>
+                            <img src="./assets/img/magasin-de-vetements-avec-mannequin.jpg" alt="" class="w-full h-30 object-cover mb-5">
+                            <ul class="space-y-1 normal-case">
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Basique</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Sport</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Luxe</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Élément -->
+                <div class="relative group">
+                    <a href="#" 
+                    class="relative inline-block after:block after:h-0.5 after:bg-white after:absolute after:-bottom-0.5 after:left-0 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                        Robes
+                    </a>
+
+                    <!-- Mega menu -->
+                    <div class="absolute left-0 top-full mt-2 hidden group-hover:flex bg-white text-black shadow-lg p-6 w-[500px] justify-between">
+                        <!-- Colonne -->
+                        <div>
+                            <h3 class="font-bold uppercase mb-2">Courtes</h3>
+                            <ul class="space-y-1 normal-case">
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Décontractées</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Été</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Colonne -->
+                        <div>
+                            <h3 class="font-bold uppercase mb-2">Longues</h3>
+                            <ul class="space-y-1 normal-case">
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">De soirée</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Bohèmes</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Colonne -->
+                        <div>
+                            <h3 class="font-bold uppercase mb-2">De soirée</h3>
+                            <ul class="space-y-1 normal-case">
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Élégantes</a></li>
+                                <li><a href="#" class="block px-2 py-1 hover:bg-gray-100 rounded">Cocktail</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Élément (sans autres niveaux) -->
+                <div class="relative group">
+                    <a href="./category.html" 
+                    class="relative inline-block after:block after:h-0.5 after:bg-white after:absolute after:-bottom-0.5 after:left-0 after:w-0 group-hover:after:w-full after:transition-all after:duration-300 cursor-pointer">
+                        Accessoires
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- ************* FIN HEADER ************* -->
+
+    <main>
+
+        <!-- ////////////////////// NOUVEAUTES ////////////////////// -->
+        <section id="first" class="my-20 flex flex-col items-center text-center">
+            <h2 class="font-semibold text-4xl">Nouveaux arrivages</h2>
+
+            <div class="flex max-xl:block max-xl:space-y-10 space-x-10 justify-center my-10">
+                <img src="./assets/img/produits.jpg" alt="" class="w-150 h-70 object-cover">
+                <img src="./assets/img/bomber.jpg" alt="" class="w-150 h-70 object-cover">
+            </div>
+
+            <p class="text-xl w-200 max-xl:w-full max-xl:px-5 text-center">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam.
+            </p>
+
+            <!-- Bouton centré et largeur auto -->
+            <a href="./category.html" class="mt-5 inline-block text-black border-2 border-black px-8 py-2 font-semibold hover:bg-black hover:text-white max-xl:text-2xl">
+                Voir les produits
+            </a>
+        </section>
+
+
+        <!-- ////////////////////// CATALOGUE ////////////////////// -->
+        <section id="second" class="my-20 flex flex-col items-center text-center">
+            <h2 class="font-semibold text-4xl mb-10">Nos produits</h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <!-- Carte produit -->
+                <div class="group relative flex flex-col items-center">
+                    <!-- Image + overlay -->
+                    <div class="relative w-65 h-90 overflow-hidden">
+                        <img src="./assets/img/produits.jpg" alt="Produit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+
+                        <!-- Overlay au survol -->
+                        <div class="absolute inset-0 bg-white/90 opacity-0 group-hover:opacity-100 transition-all duration-300 flex flex-col justify-between p-4">
+                            <!-- Sélecteur de taille -->
+                            <div>
+                                <h3 class="text-black font-semibold mb-2 uppercase">Tailles</h3>
+                                <div class="flex justify-center space-x-2">
+                                    <button class="cursor-pointer border border-gray-400 px-3 py-1 text-sm hover:bg-black hover:text-white rounded">S</button>
+                                    <button class="cursor-pointer border border-gray-400 px-3 py-1 text-sm hover:bg-black hover:text-white rounded">M</button>
+                                    <button class="cursor-pointer border border-gray-400 px-3 py-1 text-sm hover:bg-black hover:text-white rounded">L</button>
+                                    <button class="cursor-pointer border border-gray-400 px-3 py-1 text-sm hover:bg-black hover:text-white rounded">XL</button>
+                                </div>
+                            </div>
+
+                            <!-- Miniatures en bas -->
+                            <div class="flex justify-center space-x-2">
+                                <img src="./assets/img/bomber.jpg" alt="Miniature" class="w-10 h-14 object-cover rounded cursor-pointer border border-gray-300 hover:border-black">
+                                <img src="./assets/img/produits.jpg" alt="Miniature" class="w-10 h-14 object-cover rounded cursor-pointer border border-gray-300 hover:border-black">
+                                <img src="./assets/img/bomber.jpg" alt="Miniature" class="w-10 h-14 object-cover rounded cursor-pointer border border-gray-300 hover:border-black">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Infos produit -->
+                    <h3 class="mt-4 text-lg font-semibold">Soins visage</h3>
+                    <p class="text-gray-600 mb-3">79,90 €</p>
+
+                    <!-- Sélecteur quantité + bouton -->
+                    <div class="flex items-center space-x-3">
+                        <input type="number" min="1" value="1" class="w-16 border border-gray-300 rounded text-center py-2">
+                        <button class="cursor-pointer border border-black bg-black text-white px-4 py-2 rounded hover:bg-white transition hover:text-black">Ajouter au panier</button>
+                    </div>
+                </div>
+
+                <!-- Autres produits (sans choix au survol) -->
+                <div class="group relative flex flex-col items-center">
+                    <div class="relative w-65 h-90 overflow-hidden">
+                        <img src="./assets/img/bomber.jpg" alt="Produit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <a href="./product.html" class="mt-4 text-lg font-semibold">Veste bomber</a>
+                    <p class="text-gray-600 mb-3">69,90 €</p>
+                    <div class="flex items-center space-x-3">
+                        <input type="number" min="1" value="1" class="w-16 border border-gray-300 rounded text-center py-2">
+                        <button class="cursor-pointer border border-black bg-black text-white px-4 py-2 rounded hover:bg-white transition hover:text-black">Ajouter au panier</button>
+                    </div>
+                </div>
+
+                <div class="group relative flex flex-col items-center">
+                    <div class="relative w-65 h-90 overflow-hidden">
+                        <img src="./assets/img/sac-banane.jpg" alt="Produit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold">Sac en bandoulière</h3>
+                    <p class="text-gray-600 mb-3">69,90 €</p>
+                    <div class="flex items-center space-x-3">
+                        <input type="number" min="1" value="1" class="w-16 border border-gray-300 rounded text-center py-2">
+                        <button class="cursor-pointer border border-black bg-black text-white px-4 py-2 rounded hover:bg-white transition hover:text-black">Ajouter au panier</button>
+                    </div>
+                </div>
+
+                <div class="group relative flex flex-col items-center">
+                    <div class="relative w-65 h-90 overflow-hidden">
+                        <img src="./assets/img/terrarium.jpg" alt="Produit" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
+                    </div>
+                    <h3 class="mt-4 text-lg font-semibold">Terrarium</h3>
+                    <p class="text-gray-600 mb-3">69,90 €</p>
+                    <div class="flex items-center space-x-3">
+                        <input type="number" min="1" value="1" class="w-16 border border-gray-300 rounded text-center py-2">
+                        <button class="cursor-pointer border border-black bg-black text-white px-4 py-2 rounded hover:bg-white transition hover:text-black">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ////////////////////// MARQUES ////////////////////// -->
+        <section id="third" class="my-20 flex flex-col items-center text-center">
+            <h2 class="font-semibold text-4xl mb-10">Nos marques</h2>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 justify-items-center w-full max-w-6xl">
+                
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/logo-bash.png" alt="Ba&sh"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/logo-pomandere.png" alt="Pomandère"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/Logo-WhatMatters.webp" alt="What Matters"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/logo-Rowse.png" alt="Rowse"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/logo-antikbatik.webp" alt="Antik Batik"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/logo-rivedroite.svg" alt="Rive droite"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+                <a href="#" class="flex items-center justify-center bg-white p-4">
+                    <img src="./assets/img/logo-Roseanna.svg" alt="Roseanna"
+                    class="h-25 w-auto object-contain grayscale hover:grayscale-0 transition-transform duration-300 hover:scale-110">
+                </a>
+
+            </div>
+        </section>
+        
+    </main>
+
+
+    <!-- ************* FOOTER ************* -->
+    <footer class="bg-stone-100 text-gray-800 py-12 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 xl:grid-cols-4 gap-10 max-xl:text-center">
+            
+            <!-- Colonne -->
+            <div class="flex flex-col items-center xl:items-start text-center xl:text-left">
+                <!-- Logo -->
+                <img src="./assets/img/logo-paulette.png" alt="Logo" class="w-42 mb-4">
+
+                <!-- Réseaux sociaux -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-600 hover:text-black text-2xl">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-gray-600 hover:text-black text-2xl">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+
+                <!-- Adresse -->
+                <p class="mt-4 text-sm">
+                    9 Rue Saint-Sauveur, <br>
+                    50400 Granville
+                </p>
+            </div>
+
+            <!-- Colonne 2 -->
+            <div>
+                <h3 class="font-semibold text-lg mb-4 uppercase max-xl:text-xl">À propos</h3>
+                <ul class="space-y-2 text-sm max-xl:text-lg">
+                    <li><a href="#" class="hover:text-black transition">Notre histoire</a></li>
+                    <li><a href="#" class="hover:text-black transition">Nos valeurs</a></li>
+                    <li><a href="#" class="hover:text-black transition">Recrutement</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3 -->
+            <div>
+            <h3 class="font-semibold text-lg mb-4 uppercase max-xl:text-xl">Aide</h3>
+            <ul class="space-y-2 text-sm max-xl:text-lg">
+                <li><a href="#" class="hover:text-black transition">FAQ</a></li>
+                <li><a href="#" class="hover:text-black transition">Livraison & retours</a></li>
+                <li><a href="#" class="hover:text-black transition">Contactez-nous</a></li>
+            </ul>
+            </div>
+
+            <!-- Colonne 4 -->
+            <div>
+                <h3 class="font-semibold text-lg mb-4 uppercase max-xl:text-xl">Informations</h3>
+                <ul class="space-y-2 text-sm max-xl:text-lg">
+                    <li><a href="#" class="hover:text-black transition">Mentions légales</a></li>
+                    <li><a href="#" class="hover:text-black transition">Conditions générales de vente</a></li>
+                    <li><a href="#" class="hover:text-black transition">Politique de confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Bas du footer -->
+        <div class="mt-10 text-center text-gray-500 text-sm border-t border-gray-300 pt-4">
+            <a href="https://agiteesdubocage.fr/" target="_blank">©<script>document.write(new Date().getFullYear());</script> Réalisations Agitées</a>. Tous droits réservés.
+        </div>
+    </footer>
+    <!-- ************* FIN FOOTER ************* -->
+
+</body>
+</html>
